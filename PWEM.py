@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 # -----------------------------
 c = 3e8
 
-eps_A = 12.0
-eps_B = 1.0
+eps_A = 1.0
+eps_B = 2.5
 
 dA = 0.4
 dB = 0.6
