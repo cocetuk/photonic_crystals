@@ -5,16 +5,16 @@ import matplotlib.pyplot as plt
 # Параметры (можешь менять)
 # ============================
 c = 3e8                 # скорость света (м/с)
-eps_A = 5            # eps слоя A
+eps_A = 2.5        # eps слоя A
 eps_B = 1             # eps слоя B
-dA = 0.4              # толщина слоя A (м)
+dA = 0.4             # толщина слоя A (м)
 dB = 0.6               # толщина слоя B (м)
 a = dA + dB             # период
 
 N_periods = 10         # число периодов конечного кристалла
 
 # частотная сетка
-omega_max = 10 * np.pi * c / a
+omega_max = 5 * np.pi * c / a
 N_omega = 3000
 omega = np.linspace(0.01, omega_max, N_omega)
 
@@ -112,7 +112,7 @@ x_freq = omega * a / (2.0 * np.pi * c)   # нормированная часто
 
 # 1) R(ω)
 plt.figure(figsize=(8,4.5))
-plt.plot(x_freq, R, color='black')
+plt.plot(x_freq, R, color='blue')
 plt.ylim(-0.02, 1.02)
 plt.xlabel(r'$\omega a / (2\pi c)$')
 plt.ylabel(r'$R(\omega)$')
