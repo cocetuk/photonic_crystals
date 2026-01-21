@@ -14,7 +14,7 @@ a = dA + dB             # период
 N_periods = 10         # число периодов конечного кристалла
 
 # частотная сетка
-omega_max = 2.5 * np.pi * c / a
+omega_max = 10 * np.pi * c / a
 N_omega = 3000
 omega = np.linspace(0.01, omega_max, N_omega)
 
