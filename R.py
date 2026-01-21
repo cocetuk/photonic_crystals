@@ -123,7 +123,7 @@ plt.show()
 
 # 2) Re(ka/pi) (с разрывами)
 plt.figure(figsize=(8,4.5))
-plt.plot(re_ka_pi_masked, x_freq, color='black')   # обратите внимание: оси меняем местами для удобства
+plt.plot(re_ka_pi_masked, x_freq, color='blue')   # обратите внимание: оси меняем местами для удобства
 plt.xlabel(r'$\mathrm{Re}(k a / \pi)$')
 plt.ylabel(r'$\omega a / (2\pi c)$')
 plt.title('Разрешённые зоны: $\mathrm{Re}(k a / \pi)$')
